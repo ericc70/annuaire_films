@@ -11,8 +11,8 @@ $params = explode('/', $_GET['p']);
 
 print_r($params);
 }
-//on ajout en array le nom de controlleur autorisé
-$cont=array('films', 'genres', 'realisateurs', 'main','', 'index');
+//on ajout e narray le nom de controlleur autorisé
+$cont=array('films', 'genres', 'realisateurs', 'main','', 'index','annees');
 
 // Si au moins 1 paramètre existe
 
@@ -53,7 +53,7 @@ if( $params[0] != ""  ){
 }
 
 }
-//si le controleur n'est pas autorisé ou n'existe pas
+si le controleur n'est pas autoriser ou existe pas
 else{
     require_once(ROOT.'controllers/Main.php');
     http_response_code(404);

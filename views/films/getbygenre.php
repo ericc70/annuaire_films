@@ -1,16 +1,17 @@
+
 <?php
-if (!empty($genres)){ 
+if (!empty($films)){ 
 ?>
-<div class="container-fluid my-5" id="category">
+<div class="container-fluid my-5" id="genre">
         <div class="container">
           <div class="row">
 <?php
-echo var_dump($genres);
+
 
 $nb_li =0;
-$nb_max =3;
+$nb_max =4;
 
-foreach ($genres as $genre) :
+foreach ($films as $film) :
     if($nb_li == 0){
         ?>
            <div class="col-4">
@@ -18,7 +19,7 @@ foreach ($genres as $genre) :
        <?php
        }
     ?>
-                  <li class="mt-5"><a href="/films/getbygenre/<?php echo $genre['id']; ?>"><img src="<?php echo $genre['img'];?>" alt="<?php echo $genre['alt_img'];?>" width="300" height="400"></a></li>
+                  <li class="mt-5"><a href="/films/getfilm/<?php echo $film['id']; ?>"><img src="/<?php echo $film['img'];?>" alt=" <?php echo $film['alt_img'];?>" width="300" height="400"></a></li>
 <?php 
                 
                 $nb_li++;  
@@ -31,8 +32,8 @@ foreach ($genres as $genre) :
             </div>
              <?php
          
-                 }
-             ?>
+                            }
+                     ?>
 <?php endforeach ;?>
 </div>
 </div>

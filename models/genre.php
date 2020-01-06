@@ -3,7 +3,7 @@
 class Genre extends Model{
 
     public function __construct(){
-        $this->table ="genres";
+        $this->table ="genre";
         $this->getConnection();
 
 

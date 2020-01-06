@@ -1,0 +1,54 @@
+html:root{
+    --light-grey: #8A8988;
+    --dark-grey: #6A6262;
+    --pink: #870055;
+    --purple: #411B34;
+    }
+    
+    body{
+    background-image: url(../media/bg.jpg);
+    
+    }
+    
+    /********************** font *************************************/
+    @font-face {
+    font-family: "Poiret_One";
+    src: url(PoiretOne-Regular.ttf);
+    }
+    
+    .nav-link{
+    font-family: "Poiret_One";
+    color: var(--light-grey)!important;
+    }
+    
+    .nav-link:hover{
+    border-bottom: 1px solid var(--pink)!important;
+    width: 50%;
+    }
+    
+    footer{
+    font-family: "Poiret_One";
+    color: var(--light-grey); 
+    }
+    
+    span{
+    color: var(--pink)!important;
+    }
+    
+    /********************** border main *************************************/
+    .border-left{
+    border-left: 2px solid var(--purple)!important;
+    }
+    
+    /********************** block list *************************************/
+    /* #category{
+    display: none;
+    } */
+/*     
+    #director{
+    display: none;
+    }
+    
+    #date{
+    display: none;
+    } */

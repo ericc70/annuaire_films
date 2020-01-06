@@ -12,10 +12,12 @@ class Main extends Controller{
 
     }
 
+    /* erreur 404 */
     public function notfound(){
 
         $this->render('notfound');
     }
 
+    /* 403 */
 
 }

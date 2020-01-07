@@ -1,4 +1,3 @@
-
 <?php
 // On génère une constante contenant le chemin vers la racine publique du projet
 define('ROOT', str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
@@ -9,7 +8,7 @@ require_once(ROOT.'app/Controller.php');
 if (isset($_GET['p'])){
 $params = explode('/', $_GET['p']);
 
-print_r($params);
+//print_r($params);
 }
 //on ajout en array le nom de controlleur autorisé
 $cont=array('films', 'genres', 'realisateurs', 'main','', 'index');
@@ -17,8 +16,10 @@ $cont=array('films', 'genres', 'realisateurs', 'main','', 'index');
 // Si au moins 1 paramètre existe
 
 
-if(!isset($_GET['p'])){$params[0] = "main";}
-if(isset($_GET['p']) && $params[0] == "" ){$params[0] = "main";}
+if(!isset($_GET['p'])){$params[0] = "films";}
+// if(!isset($_GET['p'])){$params[0] = "main";}
+if(isset($_GET['p']) && $params[0] == "" ){$params[0] = "films";}
+// if(isset($_GET['p']) && $params[0] == "" ){$params[0] = "main";}
 if (in_array($params[0], $cont)){
 
 if( $params[0] != ""  ){

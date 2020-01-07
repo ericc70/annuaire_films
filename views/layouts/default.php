@@ -31,8 +31,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--  css-->
-    <link rel="stylesheet" href="./public/css/styles.css">
-    <link rel="icon" type="image/png"  href="./media/favicon.png">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="icon" type="image/png"  href="/public/media/favicon.png">
 
     <title>Seven Clap</title>
   </head>
@@ -41,7 +41,7 @@
       <div class="container-fluid">
         <!-- nav barre  -->
         <nav class="navbar navbar-expand-lg navbar-light">  
-          <p class="my-5 ml-2"><img id="ancre_ht-page" src="media/7_clap_logo.png" alt="seven_clap_logo" width="337" height="188"></p>
+          <p class="my-5 ml-2"><img id="ancre_ht-page" src="/public/media/7_clap_logo.png" alt="seven_clap_logo" width="337" height="188"></p>
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -83,7 +83,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+    <script src="/public/js/carousel.js"></script>
   </body>
 </html>
 

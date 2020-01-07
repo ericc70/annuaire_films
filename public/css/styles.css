@@ -1,54 +1,111 @@
 html:root{
-    --light-grey: #8A8988;
-    --dark-grey: #6A6262;
+    --light-grey: #8a8988;
+    --dark-grey: #6a6262;
     --pink: #870055;
-    --purple: #411B34;
-    }
-    
-    body{
-    background-image: url(../media/bg.jpg);
-    
-    }
-    
-    /********************** font *************************************/
-    @font-face {
+    --purple: #411b34;
+}
+
+body{
+    background-image: url(../media/bg.jpg);    
+}
+
+/********************** font *************************************/
+@font-face {
     font-family: "Poiret_One";
     src: url(PoiretOne-Regular.ttf);
-    }
-    
-    .nav-link{
+}
+
+font-prestige{
+    font-family: "Prestige_Elite_Std";
+    src: url(PrestigeEliteStd.otf);
+}
+
+.nav-link{
     font-family: "Poiret_One";
     color: var(--light-grey)!important;
-    }
-    
-    .nav-link:hover{
+}
+
+.nav-link:hover{
     border-bottom: 1px solid var(--pink)!important;
     width: 50%;
-    }
-    
-    footer{
+}
+
+.font-poiret-lg{
     font-family: "Poiret_One";
     color: var(--light-grey); 
-    }
-    
-    span{
+}
+
+span{
     color: var(--pink)!important;
-    }
-    
-    /********************** border main *************************************/
-    .border-left{
+}
+
+q{
+    font-family: "Poiret_One";
+    color: var(--dark-grey);
+}
+
+.font-prestige{
+    font-family: "Prestige_Elite_Std";
+}
+
+/********************** border main *************************************/
+.border-left{
     border-left: 2px solid var(--purple)!important;
+}
+
+/*************************** caroussel***********************/
+.contenu-carrousel {
+    margin: 5rem auto;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    perspective: 1000px;
+}
+.carrousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.carrousel a {
+    backface-visibility: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,.6);
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    outline: 1px solid transparent;
+}
+.carrousel a:nth-child(1) {
+transform: rotateY(0) translateZ(270px);
+}
+.carrousel a:nth-child(2) {
+transform: rotateY(60deg) translateZ(270px);
+}
+.carrousel a:nth-child(3) {
+transform: rotateY(120deg) translateZ(270px);
+}
+.carrousel a:nth-child(4) {
+transform: rotateY(180deg) translateZ(270px);
+}
+.carrousel a:nth-child(5) {
+transform: rotateY(240deg) translateZ(270px);
+}
+.carrousel a:nth-child(6) {
+transform: rotateY(300deg) translateZ(270px);
+}
+.controle{
+    display:grid;
+    grid:2rem/repeat(2,1fr);
+    place-items:center
+}
+button{
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    background: var(--bgcolor1);
+}
+
+    h2{
+        color: var(--light-grey)!important;
     }
-    
-    /********************** block list *************************************/
-    /* #category{
-    display: none;
-    } */
-/*     
-    #director{
-    display: none;
-    }
-    
-    #date{
-    display: none;
-    } */

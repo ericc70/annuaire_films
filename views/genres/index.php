@@ -5,7 +5,7 @@ if (!empty($genres)){
         <div class="container">
           <div class="row">
 <?php
-echo var_dump($genres);
+//echo var_dump($genres);
 
 $nb_li =0;
 $nb_max =3;
